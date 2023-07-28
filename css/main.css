@@ -1,0 +1,437 @@
+/*---各種読み込み---*/
+
+@font-face {
+    font-family: 'D';
+    src: url(/font/Menlo\ Regular.ttf) format('opentype');
+  }
+  
+  /*---アニメーション---*/
+  
+  .anim-box.popup.is-animated {
+    animation: popup 1s cubic-bezier(0.22, 2, 0.36, 1) 1 forwards;
+  }
+   
+  @keyframes popup {
+    0% {
+      transform: translateY(0px) scale(1.05);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(30px) scale(1);
+    }
+    80%, 100% {
+      opacity: 1;
+    }
+  }
+
+  .anim-box.popup.is-animated-circle{
+    animation: popup-circle 2s cubic-bezier(0.22, 2, 0.36, 1) 1 forwards;
+  }
+
+  @keyframes popup-circle {
+    0% {
+      transform: translateY(0px) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+    80%, 100% {
+      opacity: 1;
+    }
+  }
+
+  /*---メイン---*/
+  
+  body{
+    position: relative;
+    font-family: 'D';
+    user-select: none;
+    width: 1300px;
+    height: auto;
+    background-image: linear-gradient(135deg, rgba(233, 246, 250, 1), rgba(145, 211, 255));
+    margin: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+  .container{
+    width: 1300px;
+    margin: 20px;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .circle0{
+    position: absolute;
+    top: 450px;
+    left: 260px;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background-color:rgb(255, 255, 255);
+    background-image:
+    radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
+    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .circle1{
+    position: absolute;
+    top: 520px;
+    left: 360px;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color:rgb(255, 255, 255);
+    background-image:
+    radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
+    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .circle2{
+    position: absolute;
+    top: 90px;
+    left: 1000px;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-color:rgb(255, 255, 255);
+    background-image:
+    radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
+    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .circle3{
+    position: absolute;
+    top: 20px;
+    left: 940px;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color:rgb(255, 255, 255);
+    background-image:
+    radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
+    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .base{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 480px;
+    background-color: rgba(0, 195, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+    line-height: normal;
+  }
+
+  .main-nav{
+    display: flex;
+    font-size: 20px;
+  }
+
+  ul{
+    padding-left: 20px;
+  }
+
+  .nav-item{
+    align-items: center;
+    list-style:none;
+  }
+
+  a{
+    text-decoration: none;
+    color:inherit
+  }
+
+  .gaimoch{
+    color: #ffffff;
+    line-height: normal;
+  }
+
+  .gaimoch:hover{
+    color: rgb(227, 248, 255);
+  }
+
+  .illust{
+    color: #ffffff;
+    margin-left: 10px;
+    line-height: normal;
+  }
+
+  .illust:hover{
+    color: rgb(227, 248, 255);
+  }
+
+  .note{
+    color: #ffffff;
+    margin-left: 10px;
+    line-height: normal;
+  }
+
+  .note:hover{
+    color: rgb(227, 248, 255);
+  }
+
+  .source{
+    color: #ffffff;
+    margin-left: 10px;
+    justify-content: center;
+    line-height: normal;
+  }
+
+  .source:hover{
+    color: rgb(227, 248, 255);
+  }
+
+  .intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .img{
+    justify-content: left;
+  }
+
+  .name{
+    flex-flow: column;
+    display: flex;
+  }
+  
+  h1{
+    color: #59cbff;
+    font-size: 40px;
+    margin: 0px;
+    text-align: left;
+  }
+
+  p{
+    color: #59cbff;
+    text-align: left;
+    font-size: 20px;
+    margin: 0px;
+    font-weight: bold;
+  }
+
+  .url {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .twitter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    gap: 7px;
+
+    height: 40px;
+    width: 140px;
+    background-color: rgba(0, 195, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+  }
+
+  .twitter:hover{
+    background-color: rgba(0, 195, 255, 0.3);
+  }
+
+  .twitter:active{
+    position: relative;
+    top: 2px;
+    background-color: rgba(0, 195, 255, 0.4);
+  }
+
+  .instagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    gap: 7px;
+
+    height: 40px;
+    width: 170px;
+    background-color: rgba(255, 0, 239, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+  }
+
+  .instagram:hover{
+    background-color: rgba(255, 0, 239, 0.3);
+  }
+
+  .instagram:active{
+    position: relative;
+    top: 2px;
+    background-color: rgba(255, 0, 239, 0.4);
+  }
+
+  .github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    gap: 7px;
+
+    height: 40px;
+    width: 130px;
+    background-color: rgba(0, 52, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    box-shadow: #389fce;
+  }
+  
+  .github:hover{
+    background-color: rgba(0, 52, 255, 0.3);
+  }
+
+  .github:active{
+    position: relative;
+    top: 2px;
+    background-color: rgba(0, 52, 255, 0.4);
+  }
+
+  /*---480px---*/
+  
+  @media screen and (max-width: 480px) {
+    body{
+      position: relative;
+      font-family: 'D';
+      user-select: none;
+      width: 370px;
+      height: 700px;
+      background-image: linear-gradient(135deg, rgba(233, 246, 250, 1), rgba(145, 211, 255));
+      margin: auto;
+      background-attachment: fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+      width: 360px;
+      height: 700px;
+      margin: 20px;
+      position: relative;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .base{
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: auto;
+      height: auto;
+      background-color: rgba(0, 195, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-right-color: rgba(255, 255, 255, 0.2);
+      border-bottom-color: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px);
+      line-height: normal;
+    }
+
+    .intro {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      background-color: rgba(255, 255, 255, 0.26);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-right-color: rgba(255, 255, 255, 0.2);
+      border-bottom-color: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      margin: auto;
+      margin-top: 50px;
+    }
+
+    .gaimoch{
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    .nav-item{
+      display: flex;
+    }
+    
+    ul {
+      padding: 0;
+    }
+  }
