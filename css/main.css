@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'D';
-    src: url(/font/Menlo\ Regular.ttf) format('opentype');
+    src: url(/font/DotGothic16-Regular.ttf) format('opentype');
   }
   
   /*---アニメーション---*/
@@ -44,39 +44,41 @@
   /*---メイン---*/
   
   body{
-    position: relative;
     font-family: 'D';
-    user-select: none;
-    width: 1300px;
-    height: auto;
-    background-image: linear-gradient(135deg, rgba(233, 246, 250, 1), rgba(145, 211, 255));
-    margin: auto;
+    background-color:hsla(215,100%,97%,1);
+    background-image:
+    radial-gradient(at 21% 71%, hsla(252,100%,86%,1) 0px, transparent 50%),
+    radial-gradient(at 68% 10%, hsla(224,100%,86%,1) 0px, transparent 50%),
+    radial-gradient(at 16% 7%, hsla(224,100%,86%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 81%, hsla(268,100%,87%,1) 0px, transparent 50%);
     background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+    margin: 0px;
+    height: 100vh;
   }
 
   .container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
     width: 1300px;
-    margin: 20px;
-    position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: auto;
+    align-items: center;
   }
   
   .circle0{
     position: absolute;
-    top: 450px;
-    left: 260px;
+    top: 400px;
+    left: 270px;
     transform: translate(-50%, -50%);
     width: 120px;
     height: 120px;
     background-color:rgb(255, 255, 255);
     background-image:
     radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
-    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    radial-gradient(at 50% 50%, rgb(234, 176, 255) 0px, transparent 100%);
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -84,7 +86,7 @@
 
   .circle1{
     position: absolute;
-    top: 520px;
+    top: 480px;
     left: 360px;
     transform: translate(-50%, -50%);
     width: 80px;
@@ -92,7 +94,7 @@
     background-color:rgb(255, 255, 255);
     background-image:
     radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
-    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    radial-gradient(at 50% 50%, rgb(234, 176, 255) 0px, transparent 100%);
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -101,14 +103,14 @@
   .circle2{
     position: absolute;
     top: 90px;
-    left: 1000px;
+    left: 1020px;
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
     background-color:rgb(255, 255, 255);
     background-image:
     radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
-    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    radial-gradient(at 50% 50%, rgb(234, 176, 255) 0px, transparent 100%);
     border-radius: 50%;
     color: #fff;
     text-align: center;
@@ -117,26 +119,28 @@
   .circle3{
     position: absolute;
     top: 20px;
-    left: 940px;
+    left: 950px;
     transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
     background-color:rgb(255, 255, 255);
     background-image:
     radial-gradient(at 0% 0%, hsla(191,100%,96%,1) 0px, transparent 40%),
-    radial-gradient(at 50% 50%, rgb(0, 208, 255) 0px, transparent 100%);
+    radial-gradient(at 50% 50%, rgb(234, 176, 255) 0px, transparent 100%);
     border-radius: 50%;
     color: #fff;
     text-align: center;
   }
 
   .base{
-    position: relative;
+    display: grid;
+    margin: 0px;
+    gap: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: 480px;
-    background-color: rgba(0, 195, 255, 0.18);
+    height: 100%;
+    background-color: rgba(155, 203, 255, 0.38);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-right-color: rgba(255, 255, 255, 0.2);
     border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -149,6 +153,7 @@
   .main-nav{
     display: flex;
     font-size: 20px;
+    height: 64px;
   }
 
   ul{
@@ -208,10 +213,10 @@
   .intro {
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
     width: 600px;
     height: 300px;
     background-color: rgba(255, 255, 255, 0.26);
@@ -221,8 +226,7 @@
     border-radius: 15px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    margin: auto;
-    margin-top: 50px;
+    margin: 0px 50px 50px 50px;
   }
 
   
@@ -243,14 +247,14 @@
   }
   
   h1{
-    color: #59cbff;
+    color: #809aff;
     font-size: 40px;
     margin: 0px;
     text-align: left;
   }
 
   p{
-    color: #59cbff;
+    color: #809aff;
     text-align: left;
     font-size: 20px;
     margin: 0px;
@@ -275,7 +279,7 @@
 
     height: 40px;
     width: 140px;
-    background-color: rgba(0, 195, 255, 0.18);
+    background-color: rgba(0, 195, 255, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-right-color: rgba(255, 255, 255, 0.2);
     border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -283,13 +287,13 @@
   }
 
   .twitter:hover{
-    background-color: rgba(0, 195, 255, 0.3);
+    background-color: rgba(0, 195, 255, 0.4);
   }
 
   .twitter:active{
     position: relative;
     top: 2px;
-    background-color: rgba(0, 195, 255, 0.4);
+    background-color: rgba(0, 195, 255, 0.5);
   }
 
   .instagram{
