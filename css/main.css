@@ -178,7 +178,7 @@ a {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	gap: 20px;
+	gap: 50px;
 	width: 600px;
 	height: 300px;
 	background-color: rgba(255, 255, 255, 0.26);
@@ -321,11 +321,11 @@ p {
 	}
 	.container {
 		position: absolute;
-		top: 40%;
+		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		display: grid;
-		width: 340px;
+		width: auto;
 		height: auto;
 		align-items: center;
 	}
@@ -367,11 +367,10 @@ p {
 	}
 	.base {
 		display: grid;
-		margin: 0px;
 		gap: 10px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 340px;
+		width: 365px;
 		height: 100%;
 		justify-content: center;
 		line-height: normal;
@@ -382,14 +381,20 @@ p {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		gap: 40px;
-		width: 300px;
-		height: 400px;
-		margin: 0px 15px 13px 15px;
+		gap: 20px;
+		width: auto;
+		height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 13px;
+    margin-left: 0px;
+    margin-right: 0px;
 	}
 	.intro-container {
 		display: flex;
-		flex-flow: column;
+		flex-flow: row;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
@@ -398,7 +403,7 @@ p {
 		width: 180px;
 	}
 	.avatar {
-		width: 150px;
+		width: 110px;
 		height: auto;
 	}
 	.gaimoch {
@@ -414,8 +419,12 @@ p {
 		font-weight: bold;
 		height: 40px;
 	}
+  ul{
+    padding-left: 0px;
+  }
 	.nav-item {
 		display: flex;
+    gap: 10px;
 	}
 	h1 {
 		font-size: 30px;
@@ -424,19 +433,24 @@ p {
 	}
 	p {
 		text-align: left;
-		font-size: 18px;
+		font-size: 15px;
 		margin: 0px;
 		font-weight: bold;
 	}
 	.url {
-		gap: 20px;
+		gap: 10px;
 	}
-	.twitter, .instagram, .github {
-		font-size: 15px;
+	.twitter, .github {
+		font-size: 14px;
 		height: 30px;
-		width: 100px;
+		width: 95px;
 	}
+  .instagram{
+    font-size: 14px;
+		height: 30px;
+		width: 110px;
+  }
 	.sns-icon {
-		width: 20px;
+		width: 18px;
 	}
 }
