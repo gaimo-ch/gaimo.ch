@@ -1,11 +1,11 @@
-/*---各種読み込み---*/
+/*---Load---*/
 
 @font-face {
 	font-family: 'D';
 	src: url(/font/DotGothic16-Regular.ttf) format('opentype');
 }
 
-/*---アニメーション---*/
+/*---Animation---*/
 
 .anim-box.popup.is-animated {
 	animation: popup 1s cubic-bezier(0.22, 2, 0.36, 1) 1 forwards;
@@ -41,7 +41,7 @@
 	}
 }
 
-/*---メイン---*/
+/*---Main---*/
 
 body {
 	font-family: 'D';
@@ -172,6 +172,13 @@ a {
 	color: rgb(227, 248, 255);
 }
 
+.intro-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
 .intro {
 	position: relative;
 	display: flex;
@@ -189,13 +196,6 @@ a {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 	margin: 0px 50px 50px 50px;
-}
-
-.intro-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
 }
 
 .name {
@@ -311,142 +311,150 @@ p {
 	background-color: rgba(0, 52, 255, 0.4);
 }
 
-/*---480px---*/
+/*---Media query---*/
 
-@media screen and (max-width: 480px) {
+@media (max-width: 768px) {
 	body {
-		font-family: 'D';
-		margin: 0px;
-		height: 100vh;
+		font-size: 16px;
 	}
 	.container {
-		position: absolute;
+		width: 95%;
 		top: 45%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		display: grid;
-		width: auto;
-		height: auto;
-		align-items: center;
 	}
 	.circle0 {
-		position: absolute;
-		top: 470px;
-		left: 30px;
+		top: 430px;
+		left: 70px;
 		transform: translate(-50%, -50%);
-		width: 80px;
-		height: 80px;
-		text-align: center;
 	}
 	.circle1 {
-		position: absolute;
-		top: 500px;
-		left: 100px;
+		top: 480px;
+		left: 170px;
 		transform: translate(-50%, -50%);
-		width: 60px;
-		height: 60px;
-		text-align: center;
 	}
 	.circle2 {
-		position: absolute;
-		top: 40px;
-		left: 310px;
+		top: 50px;
+		left: 600px;
 		transform: translate(-50%, -50%);
-		width: 80px;
-		height: 80px;
-		text-align: center;
 	}
 	.circle3 {
-		position: absolute;
-		top: 20px;
-		left: 240px;
+		top: 10px;
+		left: 510px;
 		transform: translate(-50%, -50%);
-		width: 60px;
-		height: 60px;
-		text-align: center;
 	}
 	.base {
-		display: grid;
-		gap: 15px;
-		margin-left: auto;
-		margin-right: auto;
-		width: 350px;
-		height: 100%;
-		justify-content: center;
-		line-height: normal;
-	}
-	.intro {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		gap: 40px;
 		width: auto;
-		height: auto;
-		padding-top: 30px;
-		padding-bottom: 30px;
-		padding-left: 10px;
-		padding-right: 10px;
-		margin-bottom: 15px;
-		margin-left: 0px;
-		margin-right: 0px;
-	}
-	.intro-container {
-		display: flex;
-		flex-flow: row;
-		justify-content: center;
-		align-items: center;
-		gap: 10px;
-	}
-	.name {
-		width: 180px;
-	}
-	.avatar {
-		width: 110px;
-		height: auto;
-	}
-	.gaimoch {
-		font-size: 17px;
-		font-weight: bold;
+		margin: 0px;
+		padding: 15px 20px 20px 20px;
+		gap: 20px;
 	}
 	.main-nav {
-		margin: 7px 7px 0px 7px;
-		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		font-size: 18px;
-		font-weight: bold;
 		height: 40px;
+	}
+	ul {
+		padding-left: 0px;
+		margin: 0px;
+	}
+	.nav-item {
+		margin-bottom: 10px;
+		margin: 0px;
+		font-size: 18px;
+	}
+	.name {
+		text-align: center;
+	}
+	.intro {
+		width: auto;
+		margin: 0px 30px 30px 30px;
+		padding: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 14px;
+		overflow: hidden;
+	}
+	.container {
+		width: 100%;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.circle0 {
+		top: 490px;
+		left: 70px;
+		transform: translate(-50%, -50%);
+	}
+	.circle1 {
+		top: 520px;
+		left: 175px;
+		transform: translate(-50%, -50%);
+	}
+	.circle2 {
+		top: 60px;
+		left: 330px;
+		transform: translate(-50%, -50%);
+	}
+	.circle3 {
+		top: 30px;
+		left: 240px;
+		transform: translate(-50%, -50%);
+	}
+	.base {
+		width: 90%;
+		height: auto;
+		margin: 10px auto;
+		padding: 15px 10px 10px 10px;
+		gap: 0px;
+	}
+	.main-nav {
+		flex-direction: row;
+		justify-content: center;
+		height: auto;
 	}
 	ul {
 		padding-left: 0px;
 	}
 	.nav-item {
-		display: flex;
-		gap: 10px;
+		margin-bottom: 10px;
+	}
+	.name {
+		text-align: center;
+	}
+	.avatar {
+		width: 100px;
 	}
 	h1 {
 		font-size: 30px;
-		margin: 0px;
-		text-align: left;
 	}
 	p {
-		text-align: left;
-		font-size: 15px;
-		margin: 0px;
-		font-weight: bold;
+		font-size: 16px;
+	}
+	.intro-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.intro {
+		width: auto;
+		height: auto;
+		margin: 10px;
+		padding: 30px 10px 30px 10px;
 	}
 	.url {
-		gap: 30px;
-		flex-flow: column;
+		flex-direction: column;
 	}
 	.twitter, .instagram, .github {
-		font-size: 20px;
-		height: 40px;
-		width: 180px;
+		width: 100%;
+		text-align: center;
 	}
-	.sns-icon {
-		width: 25px;
+	.twitter, .instagram, .github, .twitter:hover, .instagram:hover, .github:hover, .twitter:active, .instagram:active, .github:active {
+		width: 180px;
+		border-radius: 20px;
 	}
 }
