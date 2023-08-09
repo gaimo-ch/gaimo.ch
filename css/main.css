@@ -123,12 +123,12 @@ body {
 .base {
 	display: grid;
 	margin: 0px;
-	gap: 20px;
+	gap: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 700px;
 	height: 100%;
-	background-color: rgba(155, 203, 255, 0.38);
+	background-color: rgba(190, 136, 255, 0.23);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -155,14 +155,11 @@ ul {
 
 a {
 	text-decoration: none;
-	color: inherit
+	color: inherit;
+	font-weight: normal;
 }
 
-.gaimoch {
-	color: #ffffff;
-}
-
-.illust, .note, .source {
+.gaimoch, .illust, .note, .source {
 	color: #ffffff;
 	line-height: normal;
 	margin-left: 10px;
@@ -188,13 +185,11 @@ a {
 	gap: 40px;
 	width: 600px;
 	height: 300px;
-	background-color: rgba(255, 255, 255, 0.26);
+	background-color: rgba(255, 255, 255, 0.28);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
 	border-radius: 15px;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
 	margin: 0px 50px 50px 50px;
 }
 
@@ -208,18 +203,19 @@ a {
 }
 
 h1 {
-	color: #809aff;
+	color: #ba80ff;
 	font-size: 40px;
+	font-weight: bold;
 	margin: 0px;
 	text-align: left;
 }
 
 p {
-	color: #809aff;
+	color: #ba80ff;
 	text-align: left;
 	font-size: 20px;
 	margin: 0px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .url {
@@ -434,6 +430,9 @@ p {
 	p {
 		font-size: 16px;
 	}
+	.gaimoch {
+		margin: 0px;
+	}
 	.intro-container {
 		display: flex;
 		justify-content: center;
@@ -454,7 +453,11 @@ p {
 		text-align: center;
 	}
 	.twitter, .instagram, .github, .twitter:hover, .instagram:hover, .github:hover, .twitter:active, .instagram:active, .github:active {
-		width: 180px;
+		width: 170px;
+		height: 35px;
 		border-radius: 20px;
+	}
+	.sns-icon {
+		width: 25px;
 	}
 }
