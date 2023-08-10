@@ -59,15 +59,15 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: grid;
-	width: 1300px;
+	width: 700px;
 	height: auto;
 	align-items: center;
 }
 
 .circle0 {
 	position: absolute;
-	top: 400px;
-	left: 270px;
+	top: 430px;
+	left: 0px;
 	transform: translate(-50%, -50%);
 	width: 120px;
 	height: 120px;
@@ -81,7 +81,7 @@ body {
 .circle1 {
 	position: absolute;
 	top: 480px;
-	left: 360px;
+	left: 100px;
 	transform: translate(-50%, -50%);
 	width: 80px;
 	height: 80px;
@@ -94,8 +94,8 @@ body {
 
 .circle2 {
 	position: absolute;
-	top: 90px;
-	left: 1020px;
+	top: 50px;
+	left: 700px;
 	transform: translate(-50%, -50%);
 	width: 100px;
 	height: 100px;
@@ -109,7 +109,7 @@ body {
 .circle3 {
 	position: absolute;
 	top: 20px;
-	left: 950px;
+	left: 610px;
 	transform: translate(-50%, -50%);
 	width: 70px;
 	height: 70px;
@@ -124,9 +124,9 @@ body {
 	display: grid;
 	margin: 0px;
 	gap: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 700px;
+	margin: 0px;
+	padding: 0px 50px 50px 50px;
+	width: auto;
 	height: 100%;
 	background-color: rgba(190, 136, 255, 0.23);
 	border: 1px solid rgba(255, 255, 255, 0.4);
@@ -142,6 +142,7 @@ body {
 	display: flex;
 	font-size: 20px;
 	height: 64px;
+	margin-left: -50px;
 }
 
 ul {
@@ -190,7 +191,8 @@ a {
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
 	border-radius: 15px;
-	margin: 0px 50px 50px 50px;
+	margin: 0px;
+    padding: 0px;
 }
 
 .name {
@@ -349,6 +351,7 @@ p {
 		flex-direction: column;
 		justify-content: center;
 		height: 40px;
+		margin: 0px;
 	}
 	ul {
 		padding-left: 0px;
@@ -381,17 +384,17 @@ p {
 		transform: translate(-50%, -50%);
 	}
 	.circle0 {
-		top: 490px;
-		left: 70px;
+		top: 460px;
+		left: 50px;
 		transform: translate(-50%, -50%);
 	}
 	.circle1 {
-		top: 520px;
-		left: 175px;
+		top: 480px;
+		left: 155px;
 		transform: translate(-50%, -50%);
 	}
 	.circle2 {
-		top: 60px;
+		top: 50px;
 		left: 330px;
 		transform: translate(-50%, -50%);
 	}
@@ -401,16 +404,17 @@ p {
 		transform: translate(-50%, -50%);
 	}
 	.base {
-		width: 90%;
+		width: 85%;
 		height: auto;
 		margin: 10px auto;
-		padding: 15px 10px 10px 10px;
-		gap: 0px;
+		padding: 15px 20px 20px 20px;
+		gap: 10px;
 	}
 	.main-nav {
 		flex-direction: row;
 		justify-content: center;
 		height: auto;
+		margin: 0px;
 	}
 	ul {
 		padding-left: 0px;
@@ -442,7 +446,7 @@ p {
 	.intro {
 		width: auto;
 		height: auto;
-		margin: 10px;
+		margin: 0px;
 		padding: 30px 10px 30px 10px;
 	}
 	.url {
