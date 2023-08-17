@@ -55,15 +55,18 @@ body {
 }
 
 .container {
-	position: relative;
-	margin: auto;
+	position: absolute;
+	top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	width: 700px;
 	height: 100%;
+	margin: auto;
 }
 
 .circle0 {
 	position: absolute;
-	top: 720px;
+	top: 420px;
 	left: 0px;
 	transform: translate(-50%, -50%);
 	width: 120px;
@@ -77,7 +80,7 @@ body {
 
 .circle1 {
 	position: absolute;
-	top: 780px;
+	top: 480px;
 	left: 90px;
 	transform: translate(-50%, -50%);
 	width: 80px;
@@ -91,7 +94,7 @@ body {
 
 .circle2 {
 	position: absolute;
-	top: 370px;
+	top: 65px;
 	left: 700px;
 	transform: translate(-50%, -50%);
 	width: 100px;
@@ -105,7 +108,7 @@ body {
 
 .circle3 {
 	position: absolute;
-	top: 320px;
+	top: 15px;
 	left: 620px;
 	transform: translate(-50%, -50%);
 	width: 70px;
@@ -118,23 +121,22 @@ body {
 }
 
 .base {
-	position: absolute;
-	transform: translate(0%, 70%);
-	display: grid;
-	margin: 0px;
-	gap: 10px;
-	margin: auto;
-	padding: 0px 50px 50px 50px;
-	width: auto;
-	height: auto;
-	background-color: rgba(190, 136, 255, 0.23);
-	border: 1px solid rgba(255, 255, 255, 0.4);
-	border-right-color: rgba(255, 255, 255, 0.2);
-	border-bottom-color: rgba(255, 255, 255, 0.2);
-	border-radius: 15px;
-	backdrop-filter: blur(10px);
-	-webkit-backdrop-filter: blur(10px);
-	line-height: normal;
+    display: grid;
+	justify-content: center;
+    margin: 0px;
+    gap: 10px;
+    margin: auto;
+    padding: 0px 50px 50px 50px;
+    width: auto;
+    height: auto;
+    background-color: rgba(190, 136, 255, 0.23);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    line-height: normal;
 }
 
 .main-nav {
@@ -176,7 +178,7 @@ a {
 	justify-content: start;
 	flex-direction: column;
 	gap: 40px;
-	width: 600px;
+	width: 560px;
 	height: 300px;
 	background-color: rgba(255, 255, 255, 0.28);
 	border: 1px solid rgba(255, 255, 255, 0.4);
@@ -251,23 +253,23 @@ p {
 		margin: auto;
 	}
 	.circle0 {
-		top: 660px;
+		top: 480px;
 		left: 50px;
 		transform: translate(-50%, -50%);
 	}
 	.circle1 {
-		top: 710px;
+		top: 520px;
 		left: 150px;
 		transform: translate(-50%, -50%);
 	}
 	.circle2 {
-		top: 250px;
+		top: 50px;
 		left: 700px;
 		transform: translate(-50%, -50%);
 	}
 	.circle3 {
-		top: 200px;
-		left: 620px;
+		top: 15px;
+		left: 615px;
 		transform: translate(-50%, -50%);
 	}
 	.base {
@@ -298,7 +300,7 @@ p {
 	.name {
 		text-align: center;
 	}
-	.intro {
+	.main {
 		width: auto;
 		margin: 0px 30px 30px 30px;
 		padding: 20px;
@@ -325,27 +327,31 @@ p {
 		font-size: 14px;
 	}
 	.container {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		width: 100%;
 		height: 100%;
 		margin: auto;
 	}
 	.circle0 {
-		top: 480px;
+		top: 425px;
 		left: 20px;
 		transform: translate(-50%, -50%);
 	}
 	.circle1 {
-		top: 530px;
+		top: 470px;
 		left: 120px;
 		transform: translate(-50%, -50%);
 	}
 	.circle2 {
-		top: 130px;
+		top: 55px;
 		left: 350px;
 		transform: translate(-50%, -50%);
 	}
 	.circle3 {
-		top: 90px;
+		top: 20px;
 		left: 265px;
 		transform: translate(-50%, -50%);
 	}
@@ -394,7 +400,7 @@ p {
 		align-items: center;
 		gap: 10px;
 	}
-	.intro {
+	.main {
 		width: auto;
 		height: auto;
 		margin: 0px;
