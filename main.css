@@ -160,13 +160,13 @@ a {
 	font-weight: normal;
 }
 
-.gaimoch, .illust, .note, .source {
+.gaimoch, .illust, .source {
 	color: #ffffff;
 	line-height: normal;
 	margin-left: 10px;
 }
 
-.gaimoch:hover, .illust:hover, .note:hover, .source:hover {
+.gaimoch:hover, .illust:hover, .source:hover {
 	color: rgb(227, 248, 255);
 }
 
