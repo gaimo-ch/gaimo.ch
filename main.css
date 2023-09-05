@@ -225,7 +225,7 @@ p {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 20px;
+	gap: 40px;
 }
 
 .sns-icon {
@@ -492,6 +492,7 @@ p {
 	}
 	.url {
 		flex-direction: row;
+		gap: 20px;
 	}
 	.sns-icon {
 		height: 30px;
