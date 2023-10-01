@@ -164,10 +164,11 @@ a {
 	color: #ffffff;
 	line-height: normal;
 	margin-left: 10px;
+	transition: .5s;
 }
 
 .gaimoch:hover, .illust:hover, .source:hover {
-	color: rgb(227, 248, 255);
+	color: #ba80ff;
 }
 
 .intro-container {
@@ -245,16 +246,17 @@ p {
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
+	transition: .5s;
 }
 
 .twitter:hover {
-	background-color: rgba(0, 195, 255, 0.4);
+	transform: scale(1.1,1.1);
+	background-color: rgba(97, 217, 255, 0.3);
 }
 
 .twitter:active {
 	position: relative;
 	top: 2px;
-	background-color: rgba(0, 195, 255, 0.5);
 }
 
 .instagram {
@@ -270,16 +272,17 @@ p {
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
+	transition: .5s;
 }
 
 .instagram:hover {
-	background-color: rgba(255, 0, 239, 0.3);
+	transform: scale(1.1,1.1);
+	background-color: rgba(255, 129, 247, 0.3);
 }
 
 .instagram:active {
 	position: relative;
 	top: 2px;
-	background-color: rgba(255, 0, 239, 0.4);
 }
 
 .github {
@@ -295,16 +298,17 @@ p {
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
+	transition: .5s;
 }
 
 .github:hover {
-	background-color: rgba(0, 52, 255, 0.3);
+	transform: scale(1.1,1.1);
+	background-color: rgba(135, 159, 255, 0.3);
 }
 
 .github:active {
 	position: relative;
 	top: 2px;
-	background-color: rgba(0, 52, 255, 0.4);
 }
 
 .zenn {
@@ -320,16 +324,17 @@ p {
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
 	border-radius: 50%;
+	transition: .5s;
 }
 
 .zenn:hover {
-	background-color: rgba(0, 195, 255, 0.4);
+	transform: scale(1.1,1.1);
+	background-color: rgba(97, 217, 255, 0.3);
 }
 
 .zenn:active {
 	position: relative;
 	top: 2px;
-	background-color: rgba(0, 195, 255, 0.5);
 }
 
 /*---Media query---*/
