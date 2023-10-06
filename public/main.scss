@@ -1,0 +1,175 @@
+$text: #8675ff;
+@font-face {
+	font-family: 'D';
+	src: url(/font/DotGothic16-Regular.ttf) format('opentype');
+}
+
+body {
+	font-family: 'D';
+	background-color: hsla(254, 100%, 85%, 1);
+	background-image: radial-gradient(at 0% 100%, hsla(267, 100%, 89%, 1) 0px, transparent 50%), radial-gradient(at 100% 100%, hsla(267, 100%, 89%, 1) 0px, transparent 50%), radial-gradient(at 100% 0%, hsla(206, 100%, 76%, 1) 0px, transparent 50%), radial-gradient(at 0% 0%, hsla(206, 100%, 76%, 1) 0px, transparent 50%);
+	height: 100vh;
+}
+
+.tile {
+	background-image: linear-gradient(0deg, transparent calc(95% - 1px), #dfc9ff calc(100% - 1px)), linear-gradient(90deg, transparent calc(95% - 1px), #dfc9ff calc(100% - 1px));
+	background-size: 100px 100px;
+	background-repeat: repeat;
+	background-position: center center;
+	height: 100vh;
+	margin-top: -20px;
+}
+
+.container {
+	display: grid;
+	max-width: 700px;
+	margin: auto;
+}
+
+.profile {
+	display: grid;
+	background-color: rgba(156, 74, 255, 0.18);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-right-color: rgba(255, 255, 255, 0.2);
+	border-bottom-color: rgba(255, 255, 255, 0.2);
+	border-radius: 40px;
+	backdrop-filter: blur(5px);
+	box-shadow: 30px 40px 20px 0 rgba(146, 115, 255, 0.28);
+	line-height: normal;
+	height: auto;
+	width: 70%;
+	padding: 20px;
+	margin: auto;
+	margin-top: -1200px;
+	gap: 20px;
+	.profile-main {
+		display: flex;
+		align-items: center;
+		margin: auto;
+		img {
+			height: 100px;
+		}
+		.name {
+			margin-left: 20px;
+			font-size: 30px;
+			color: $text;
+			h1 {
+				font-size: 50px;
+				color: $text;
+				margin: auto;
+			}
+			p {
+				font-size: 20px;
+				color: $text;
+				margin: auto;
+			}
+		}
+	}
+	.sns {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		gap: 20px;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			gap: 10px;
+			height: 60px;
+			width: 60px;
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			border-right-color: rgba(255, 255, 255, 0.2);
+			border-bottom-color: rgba(255, 255, 255, 0.2);
+			border-radius: 50%;
+			transition: .5s;
+			&:hover {
+				transform: scale(1.1, 1.1);
+				&:active {
+					transform: scale(0.8, 0.8);
+				}
+			}
+			&.twitter {
+				background-color: rgba(0, 195, 255, 0.2);
+				&:hover {
+					background-color: rgba(0, 195, 255, 0.3);
+					&:active {
+						background-color: rgba(0, 195, 255, 0.62);
+					}
+				}
+			}
+			&.instagram {
+				background-color: rgba(255, 0, 239, 0.2);
+				&:hover {
+					background-color: rgba(255, 0, 239, 0.3);
+				}
+			}
+			&.github {
+				background-color: rgba(0, 52, 255, 0.2);
+				&:hover {
+					background-color: rgba(0, 51, 255, 0.3);
+				}
+			}
+			&.zenn {
+				background-color: rgba(0, 195, 255, 0.2);
+				&:hover {
+					background-color: rgba(0, 195, 255, 0.3);
+				}
+			}
+			&.pixiv {
+				background-color: rgba(0, 119, 255, 0.2);
+				img {
+					height: 70%;
+					width: 70%;
+				}
+				&:hover {
+					background-color: rgba(0, 119, 255, 0.3);
+				}
+			}
+		}
+	}
+}
+
+.articles {
+	display: grid;
+	background-color: rgba(156, 74, 255, 0.18);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-right-color: rgba(255, 255, 255, 0.2);
+	border-bottom-color: rgba(255, 255, 255, 0.2);
+	border-radius: 40px;
+	backdrop-filter: blur(5px);
+	box-shadow: 30px 40px 20px 0 rgba(146, 115, 255, 0.28);
+	line-height: normal;
+	height: auto;
+	width: 90%;
+	padding: 20px;
+	margin: auto;
+	margin-top: -900px;
+	gap: 20px;
+	.articles-main {
+		h2 {
+			font-size: 30px;
+			color: $text;
+			margin: auto;
+			margin-left: 20px;
+		}
+		ul {
+			margin: auto;
+		}
+		li {
+			list-style: none;
+			margin: 10px;
+		}
+		p {
+			margin: auto;
+			font-size: 20px;
+			color: $text;
+		}
+		a {
+			text-decoration: none;
+			font-size: 23px;
+			color: $text;
+			margin: auto;
+		}
+	}
+}
