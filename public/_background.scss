@@ -1,15 +1,12 @@
 body {
 	font-family: 'D';
+	user-select: none;
 	background-color: hsla(254, 100%, 85%, 1);
 	background-image:
 	radial-gradient(at 0% 100%, rgb(239, 165, 255) 0px, transparent 50%),
 	radial-gradient(at 100% 100%, rgb(239, 165, 255) 0px, transparent 50%),
 	radial-gradient(at 100% 0%, rgb(64, 172, 255) 0px, transparent 50%),
 	radial-gradient(at 0% 0%, rgb(64, 172, 255) 0px, transparent 50%);
-	background-attachment: fixed;
-	background-size: cover;
-	overflow: hidden;
-	height: 100vh;
 	margin: 0px;
 }
 
@@ -19,15 +16,16 @@ body {
 	background-size: 100px 100px;
 	background-repeat: repeat;
 	background-position: center center;
-	height: 100vh;
-	margin-top: -20px;
+	min-height: 100vh;
 }
 
 .container {
 	position: relative;
-	top: 100px;
 	display: grid;
-	max-width: 750px;
+	align-content: start;
+	justify-items: center;
+	flex-direction: column;
+	max-width: 850px;
 	margin: auto;
 	gap: 50px;
 }

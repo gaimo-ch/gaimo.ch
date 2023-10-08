@@ -8,10 +8,11 @@
 	backdrop-filter: blur(3px);
 	box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
 	line-height: normal;
+	width: 60%;
 	height: auto;
-	width: 70%;
-	padding: 20px;
+	padding: 40px 20px 40px 20px;
 	margin: auto;
+	margin-top: 90px;
 	gap: 20px;
 	.profile-main {
 		display: flex;
@@ -19,6 +20,13 @@
 		margin: auto;
 		img {
 			height: 80px;
+			transition: .5s;
+			&:hover {
+				transform: scale(1.5);
+			}
+			&:active {
+				transform: scale(3, 1);
+			}
 		}
 		.name {
 			margin-left: 20px;
@@ -46,9 +54,8 @@
 			align-items: center;
 			justify-content: center;
 			color: #ffffff;
-			gap: 10px;
-			height: 60px;
 			width: 60px;
+			height: 60px;
 			border: 1px solid rgba(255, 255, 255, 0.4);
 			border-right-color: rgba(255, 255, 255, 0.2);
 			border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -56,19 +63,19 @@
 			box-shadow: 20px 30px 20px 0 rgba(133, 99, 255, 0.28);
 			transition: .5s;
 			img {
-				height: 50%;
 				width: 50%;
+				height: 50%;
 			}
 			&:hover {
-				transform: scale(1.1, 1.1);
-				&:active {
-					transform: scale(0.8, 0.8);
-				}
+				transform: scale(1.1);
+			}
+			&:active {
+				transform: scale(0.8, 0.8);
 			}
 			&.twitter {
 				img {
-					height: 25px;
 					width: auto;
+					height: 25px;
 				}
 				background-color: rgba(0, 195, 255, 0.4);
 				&:hover {
@@ -96,8 +103,8 @@
 			&.pixiv {
 				background-color: rgba(0, 153, 255, 0.4);
 				img {
-					height: 70%;
 					width: 70%;
+					height: 70%;
 				}
 				&:hover {
 					background-color: rgba(0, 153, 255, 0.6);

@@ -1,6 +1,7 @@
 .articles {
 	display: grid;
-	background-color: rgba(122, 74, 255, 0.18);
+	justify-items: center;
+	background-color: rgba(114, 63, 255, 0.18);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -8,19 +9,17 @@
 	backdrop-filter: blur(3px);
 	box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
 	line-height: normal;
+	width: 80%;
 	height: auto;
-	width: 90%;
-	padding: 20px;
-	padding-bottom: 30px;
+	padding: 30px 20px 40px 20px;
 	margin: auto;
 	gap: 20px;
 	.articles-main {
 		display: flex;
-		flex-flow: column;
+		flex-direction: column;
 		gap: 20px;
 		.date-container {
 			display: flex;
-			justify-content: flex-start;
 			margin: 0px;
 			gap: 10px;
 			p {
@@ -29,8 +28,8 @@
 			}
 			img {
 				&.zenn {
-					height: 30px;
 					width: 30px;
+					height: 30px;
 				}
 			}
 		}
@@ -38,7 +37,6 @@
 			font-size: 35px;
 			color: $text;
 			margin: 0px;
-			margin-left: 22px;
 		}
 		p {
 			margin: 0px;

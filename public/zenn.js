@@ -34,7 +34,7 @@ function createArticleListItem(article) {
     link.appendChild(dateContainer);
     link.appendChild(title);
 
-    const listItem = document.createElement('a');
+    const listItem = document.createElement('li');
     listItem.appendChild(link);
 
     return listItem;
@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => {
             console.error('エラー:', error);
+            const errorElement = document.createElement('p');
+            errorElement.textContent = 'エラー: ' + error;
+            document.body.appendChild(errorElement);
         });
 });
 

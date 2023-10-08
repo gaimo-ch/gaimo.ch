@@ -20,12 +20,11 @@
 }
 body {
   font-family: "D";
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   background-color: hsl(254, 100%, 85%);
   background-image: radial-gradient(at 0% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 0%, rgb(64, 172, 255) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(64, 172, 255) 0px, transparent 50%);
-  background-attachment: fixed;
-  background-size: cover;
-  overflow: hidden;
-  height: 100vh;
   margin: 0px;
 }
 
@@ -34,15 +33,16 @@ body {
   background-size: 100px 100px;
   background-repeat: repeat;
   background-position: center center;
-  height: 100vh;
-  margin-top: -20px;
+  min-height: 100vh;
 }
 
 .container {
   position: relative;
-  top: 100px;
   display: grid;
-  max-width: 750px;
+  align-content: start;
+  justify-items: center;
+  flex-direction: column;
+  max-width: 850px;
   margin: auto;
   gap: 50px;
 }
@@ -58,10 +58,11 @@ body {
           backdrop-filter: blur(3px);
   box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
   line-height: normal;
+  width: 60%;
   height: auto;
-  width: 70%;
-  padding: 20px;
+  padding: 40px 20px 40px 20px;
   margin: auto;
+  margin-top: 90px;
   gap: 20px;
 }
 .profile .profile-main {
@@ -71,6 +72,13 @@ body {
 }
 .profile .profile-main img {
   height: 80px;
+  transition: 0.5s;
+}
+.profile .profile-main img:hover {
+  transform: scale(1.5);
+}
+.profile .profile-main img:active {
+  transform: scale(3, 1);
 }
 .profile .profile-main .name {
   margin-left: 20px;
@@ -98,9 +106,8 @@ body {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  gap: 10px;
-  height: 60px;
   width: 60px;
+  height: 60px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right-color: rgba(255, 255, 255, 0.2);
   border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -109,21 +116,21 @@ body {
   transition: 0.5s;
 }
 .profile .sns a img {
-  height: 50%;
   width: 50%;
+  height: 50%;
 }
 .profile .sns a:hover {
-  transform: scale(1.1, 1.1);
+  transform: scale(1.1);
 }
-.profile .sns a:hover:active {
+.profile .sns a:active {
   transform: scale(0.8, 0.8);
 }
 .profile .sns a.twitter {
   background-color: rgba(0, 195, 255, 0.4);
 }
 .profile .sns a.twitter img {
-  height: 25px;
   width: auto;
+  height: 25px;
 }
 .profile .sns a.twitter:hover {
   background-color: rgba(0, 195, 255, 0.6);
@@ -150,8 +157,8 @@ body {
   background-color: rgba(0, 153, 255, 0.4);
 }
 .profile .sns a.pixiv img {
-  height: 70%;
   width: 70%;
+  height: 70%;
 }
 .profile .sns a.pixiv:hover {
   background-color: rgba(0, 153, 255, 0.6);
@@ -159,7 +166,8 @@ body {
 
 .articles {
   display: grid;
-  background-color: rgba(122, 74, 255, 0.18);
+  justify-items: center;
+  background-color: rgba(114, 63, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right-color: rgba(255, 255, 255, 0.2);
   border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -168,21 +176,19 @@ body {
           backdrop-filter: blur(3px);
   box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
   line-height: normal;
+  width: 80%;
   height: auto;
-  width: 90%;
-  padding: 20px;
-  padding-bottom: 30px;
+  padding: 30px 20px 40px 20px;
   margin: auto;
   gap: 20px;
 }
 .articles .articles-main {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   gap: 20px;
 }
 .articles .articles-main .date-container {
   display: flex;
-  justify-content: flex-start;
   margin: 0px;
   gap: 10px;
 }
@@ -191,14 +197,13 @@ body {
   margin: 0px;
 }
 .articles .articles-main .date-container img.zenn {
-  height: 30px;
   width: 30px;
+  height: 30px;
 }
 .articles .articles-main h2 {
   font-size: 35px;
   color: #7e44ff;
   margin: 0px;
-  margin-left: 22px;
 }
 .articles .articles-main p {
   margin: 0px;
@@ -227,4 +232,43 @@ body {
 }
 .articles .articles-main a:hover {
   color: #f0e9ff;
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    width: 80%;
+    margin-top: 60px;
+    padding: 40px 20px 40px 20px;
+  }
+  .profile .profile-main {
+    flex-direction: column;
+  }
+  .profile .profile-main img:hover {
+    transform: scale(2, 1);
+  }
+  .profile .profile-main .name {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    text-align: center;
+  }
+  .profile .profile-main .name h1 {
+    font-size: 40px;
+  }
+  .profile .profile-main .name p {
+    font-size: 20px;
+  }
+  .profile .sns {
+    flex-wrap: wrap;
+    padding: 0px 20px 0px 20px;
+    gap: 20px;
+  }
+  .articles {
+    width: 80%;
+    margin-bottom: 70px;
+    padding: 30px 20px 30px 20px;
+  }
+  .articles .articles-main p {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */
