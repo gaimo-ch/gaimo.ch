@@ -22,7 +22,11 @@ body {
   font-family: "D";
   background-color: hsl(254, 100%, 85%);
   background-image: radial-gradient(at 0% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 0%, rgb(64, 172, 255) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(64, 172, 255) 0px, transparent 50%);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
   height: 100vh;
+  margin: 0px;
 }
 
 .tile {
