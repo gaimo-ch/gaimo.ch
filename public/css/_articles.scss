@@ -1,7 +1,7 @@
 .articles {
 	display: grid;
 	justify-items: center;
-	background-color: rgba(114, 63, 255, 0.18);
+	background-color: rgba(186, 63, 255, 0.18);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	border-right-color: rgba(255, 255, 255, 0.2);
 	border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -9,9 +9,9 @@
 	backdrop-filter: blur(3px);
 	box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
 	line-height: normal;
-	width: 80%;
+	width: 85%;
 	height: auto;
-	padding: 30px 20px 40px 20px;
+	padding: 35px 20px 40px 20px;
 	margin: auto;
 	gap: 20px;
 	.articles-main {
@@ -34,14 +34,33 @@
 			}
 		}
 		h2 {
+			background-color: rgba(190, 111, 255, 0.4);
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			border-right-color: rgba(255, 255, 255, 0.2);
+			border-bottom-color: rgba(255, 255, 255, 0.2);
+			border-radius: 37px;
+			backdrop-filter: blur(3px);
+			box-shadow: 10px 20px 20px 0 rgba(133, 99, 255, 0.28);
 			font-size: 35px;
-			color: $text;
+			text-indent: 25px;
+			width: 200px;
+			color: $articles;
 			margin: 0px;
+			margin-bottom: 10px;
+			padding: 3px;
+			transition: .5s;
+			&:hover {
+				transform: scale(1.06, 1.06);
+			}
+			&:active {
+				transform: scale(0.9, 0.9);
+			}
 		}
 		p {
 			margin: 0px;
 			text-align: left;
 			font-size: 20px;
+			text-indent: 0px;
 		}
 		ul {
 			display: flex;
@@ -55,15 +74,28 @@
 			margin: 0px;
 		}
 		a {
+			background-color: rgba(190, 111, 255, 0.4);
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			border-right-color: rgba(255, 255, 255, 0.2);
+			border-bottom-color: rgba(255, 255, 255, 0.2);
+			border-radius: 37px;
+			backdrop-filter: blur(3px);
+			box-shadow: 10px 20px 20px 0 rgba(133, 99, 255, 0.28);
+			font-size: 35px;
+			text-indent: 25px;
 			display: flex;
 			flex-direction: column;
 			margin: 0px;
+			padding: 10px 25px 10px 25px;
 			font-size: 20px;
-			color: $text;
+			color: $articles;
 			text-decoration: none;
 			transition: .5s;
 			&:hover {
-				color: $text-hover;
+				transform: scale(1.03, 1.03);
+			}
+			&:active {
+				transform: scale(0.95, 0.95);
 			}
 		}
 	}

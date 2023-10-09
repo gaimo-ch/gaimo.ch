@@ -1,7 +1,7 @@
 @media screen and (max-width: 480px) {
     .profile {
         width: 80%;
-        margin-top: 60px;
+        margin-top: 40px;
         padding: 40px 20px 40px 20px;
         .profile-main {
             flex-direction: column;
@@ -34,6 +34,9 @@
         margin-bottom: 70px;
         padding: 30px 20px 30px 20px;
         .articles-main {
+            h2 {
+                text-indent: 23px;
+            }
             p {
                 font-size: 18px;
             }

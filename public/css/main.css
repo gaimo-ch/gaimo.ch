@@ -24,7 +24,7 @@ body {
      -moz-user-select: none;
           user-select: none;
   background-color: hsl(254, 100%, 85%);
-  background-image: radial-gradient(at 0% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 0%, rgb(64, 172, 255) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(64, 172, 255) 0px, transparent 50%);
+  background-image: radial-gradient(at 0% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 50% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 100%, rgb(239, 165, 255) 0px, transparent 50%), radial-gradient(at 100% 0%, rgb(64, 172, 255) 0px, transparent 50%), radial-gradient(at 50% 0%, rgb(64, 172, 255) 0px, transparent 50%), radial-gradient(at 0% 0%, rgb(64, 172, 255) 0px, transparent 50%);
   margin: 0px;
 }
 
@@ -84,16 +84,16 @@ body {
 .profile .profile-main .name {
   margin-left: 20px;
   font-size: 30px;
-  color: #7e44ff;
+  color: #673dff;
 }
 .profile .profile-main .name h1 {
   font-size: 50px;
-  color: #7e44ff;
+  color: #673dff;
   margin: auto;
 }
 .profile .profile-main .name p {
   font-size: 20px;
-  color: #7e44ff;
+  color: #673dff;
   margin: auto;
 }
 .profile .sns {
@@ -168,7 +168,7 @@ body {
 .articles {
   display: grid;
   justify-items: center;
-  background-color: rgba(114, 63, 255, 0.18);
+  background-color: rgba(186, 63, 255, 0.18);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-right-color: rgba(255, 255, 255, 0.2);
   border-bottom-color: rgba(255, 255, 255, 0.2);
@@ -177,9 +177,9 @@ body {
           backdrop-filter: blur(3px);
   box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
   line-height: normal;
-  width: 80%;
+  width: 85%;
   height: auto;
-  padding: 30px 20px 40px 20px;
+  padding: 35px 20px 40px 20px;
   margin: auto;
   gap: 20px;
 }
@@ -202,14 +202,34 @@ body {
   height: 30px;
 }
 .articles .articles-main h2 {
+  background-color: rgba(190, 111, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-radius: 37px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  box-shadow: 10px 20px 20px 0 rgba(133, 99, 255, 0.28);
   font-size: 35px;
-  color: #7e44ff;
+  text-indent: 25px;
+  width: 200px;
+  color: #8f23fb;
   margin: 0px;
+  margin-bottom: 10px;
+  padding: 3px;
+  transition: 0.5s;
+}
+.articles .articles-main h2:hover {
+  transform: scale(1.06, 1.06);
+}
+.articles .articles-main h2:active {
+  transform: scale(0.9, 0.9);
 }
 .articles .articles-main p {
   margin: 0px;
   text-align: left;
   font-size: 20px;
+  text-indent: 0px;
 }
 .articles .articles-main ul {
   display: flex;
@@ -223,22 +243,36 @@ body {
   margin: 0px;
 }
 .articles .articles-main a {
+  background-color: rgba(190, 111, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-radius: 37px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  box-shadow: 10px 20px 20px 0 rgba(133, 99, 255, 0.28);
+  font-size: 35px;
+  text-indent: 25px;
   display: flex;
   flex-direction: column;
   margin: 0px;
+  padding: 10px 25px 10px 25px;
   font-size: 20px;
-  color: #7e44ff;
+  color: #8f23fb;
   text-decoration: none;
   transition: 0.5s;
 }
 .articles .articles-main a:hover {
-  color: #f0e9ff;
+  transform: scale(1.03, 1.03);
+}
+.articles .articles-main a:active {
+  transform: scale(0.95, 0.95);
 }
 
 @media screen and (max-width: 480px) {
   .profile {
     width: 80%;
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 40px 20px 40px 20px;
   }
   .profile .profile-main {
@@ -268,6 +302,9 @@ body {
     width: 80%;
     margin-bottom: 70px;
     padding: 30px 20px 30px 20px;
+  }
+  .articles .articles-main h2 {
+    text-indent: 23px;
   }
   .articles .articles-main p {
     font-size: 18px;
