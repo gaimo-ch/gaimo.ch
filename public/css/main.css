@@ -71,6 +71,7 @@ body {
   margin: auto;
 }
 .profile .profile-main img {
+  width: auto;
   height: 80px;
   transition: 0.5s;
 }
