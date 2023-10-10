@@ -1,4 +1,5 @@
 const express = require('express');
+const axios = require('axios');
 const app = express();
 const port = 3000;
 
@@ -6,11 +7,10 @@ app.use(express.static('public'));
 
 app.get('/api/articles', async (req, res) => {
   try {
-    const response = await fetch('https://zenn.dev/api/articles?username=gaimo_ch&order=latest');
+    const response = await axios.get('https://zenn.dev/api/articles?username=gaimo_ch&order=latest');
 
-    if (response.ok) {
-      const data = await response.json();
-      res.json(data);
+    if (response.status === 200) {
+      res.json(response.data);
     } else {
       res.status(500).json({ error: '無効なJSONデータが返されました' });
     }

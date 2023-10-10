@@ -20,6 +20,7 @@ function createArticleListItem(article) {
 
     const zennImage = document.createElement('img');
     zennImage.src = 'img/zenn.svg';
+    zennImage.alt = 'Zenn';
     zennImage.classList.add('zenn');
 
     const publishedAt = document.createElement('p');
@@ -41,10 +42,9 @@ function createArticleListItem(article) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('/api/articles')
-        .then(response => response.json())
-        .then(data => {
-            displayArticles(data.articles);
+    axios.get('/api/articles')
+        .then(response => {
+            displayArticles(response.data.articles);
         })
         .catch(error => {
             console.error('エラー:', error);
