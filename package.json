@@ -1,10 +1,16 @@
 {
   "name": "gaimo-ch",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "description": "<div align=\"center\"> <h1>   <a href=\"https://gaimo.ch\">     ｇａｉｍｏ．ｃｈ   </a> </h1> <p>   <b>     🌴⛲️🐬　Ａｅｓｔｈｅｔｉｃ　Ｗｅｂ　Ｄｅｓｉｇｎ　🐬⛲️🌴<br>     ＨＴＭＬ　／　ＳＣＳＳ　／　ＪａｖａＳｃｒｉｐｔ<br>   </b> </p> <img src=\"public/img/README.png\"> </div>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "axios": "^1.5.1",
     "express": "^4.18.2"
   }
 }
