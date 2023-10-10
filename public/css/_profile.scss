@@ -7,7 +7,6 @@
 	border-radius: 40px;
 	backdrop-filter: blur(3px);
 	box-shadow: 30px 40px 20px 0 rgba(133, 99, 255, 0.28);
-	line-height: normal;
 	width: 60%;
 	height: auto;
 	padding: 40px 20px 40px 20px;
@@ -31,8 +30,6 @@
 		}
 		.name {
 			margin-left: 20px;
-			font-size: 30px;
-			color: $profile;
 			h1 {
 				font-size: 50px;
 				color: $profile;
