@@ -84,11 +84,13 @@ body {
 .profile .profile-main .name h1 {
   font-size: 50px;
   color: #a245ff;
+  text-shadow: #c284ff 2px 4px;
   margin: auto;
 }
 .profile .profile-main .name p {
   font-size: 20px;
   color: #a245ff;
+  text-shadow: #c284ff 1px 2.5px;
   margin: auto;
 }
 .profile .sns {
@@ -208,6 +210,7 @@ body {
   text-indent: 25px;
   width: 200px;
   color: #a040ff;
+  text-shadow: #bc75ff 2px 4px;
   margin: 0px;
   margin-bottom: 10px;
   padding: 3px;
@@ -223,6 +226,7 @@ body {
   margin: 0px;
   text-align: left;
   text-indent: 0px;
+  text-shadow: #bf7bff 1px 2.5px;
 }
 .articles .articles-main ul {
   display: flex;
