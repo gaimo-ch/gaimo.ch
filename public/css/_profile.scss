@@ -32,14 +32,14 @@
 			margin-left: 20px;
 			h1 {
 				font-size: 50px;
-				color: $profile;
-				text-shadow: #c284ff 2px 4px;
+				color: $profile-text;
+				text-shadow: $profile-text-shadow 2px 4px;
 				margin: auto;
 			}
 			p {
 				font-size: 20px;
-				color: $profile;
-				text-shadow: #c284ff 1px 2.5px;
+				color: $profile-text;
+				text-shadow: $profile-text-shadow 1px 2.5px;
 				margin: auto;
 			}
 		}
